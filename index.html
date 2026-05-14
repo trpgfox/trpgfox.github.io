@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="dark" />
+<title>trpgfox — solo dev / game design 캐릭터 시트</title>
+<meta name="description" content="trpgfox · 2인 인디팀 5년차, 8개 모바일 게임 출시. 게임 시스템 기획 / Unity 개발 / 라이브 서비스." />
+<meta property="og:title" content="trpgfox — solo dev / game design 캐릭터 시트" />
+<meta property="og:description" content="2인 인디팀에서 8개 게임을 출시한 솔로 개발자 출신 게임 기획자의 캐릭터 시트." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://trpgfox.github.io/" />
+<link rel="icon" href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230a0908'/><text x='16' y='22' text-anchor='middle' font-size='20' font-family='serif' fill='%23f4f1ea'>fox</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&family=JetBrains+Mono:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a href="#" class="brand" data-secret="logo" aria-label="trpgfox 홈으로">
+    <span class="brand-mark">▲</span>
+    <span class="brand-name">trpgfox</span>
+  </a>
+  <nav class="nav">
+    <a href="#sheet">sheet</a>
+    <a href="#quests">quests</a>
+    <a href="#saga">saga</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <div class="topbar-meta" aria-live="polite">
+    <span id="clock">--:--</span>
+    <span class="sep">·</span>
+    <span id="seed">seed —</span>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <p class="kicker">CHARACTER&nbsp;SHEET / 0001</p>
+    <h1 class="hero-title">
+      <span class="title-line">solo&nbsp;developer</span>
+      <span class="title-line title-name">trpgfox<span class="cursor" aria-hidden="true">_</span></span>
+    </h1>
+    <p class="hero-tag">
+      <span class="tag-item">Unity</span>
+      <span class="tag-sep">/</span>
+      <span class="tag-item">시스템&nbsp;기획</span>
+      <span class="tag-sep">/</span>
+      <span class="tag-item">인디&nbsp;5년</span>
+      <span class="tag-sep">/</span>
+      <span class="tag-item">라이브&nbsp;서비스</span>
+    </p>
+    <p class="hero-body">
+      2인 인디팀에서 5년 4개월, 8개의 게임을 마켓에 던진 솔로 출신.<br />
+      지금은 모바일 RPG 길드에 합류해 라이브 콘텐츠를 굴리는 중. 시스템 기획과 빌드 버튼을 동시에 들고 있다.
+    </p>
+    <div class="hero-hint">
+      <kbd>↑</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd><kbd>←</kbd><kbd>→</kbd><kbd>B</kbd><kbd>A</kbd>
+      <span>혹은&nbsp;아무 곳이나&nbsp;클릭&nbsp;후&nbsp;<code>roll</code>&nbsp;타이핑</span>
+    </div>
+  </div>
+
+  <aside class="hero-card" aria-label="status block">
+    <div class="card-head">
+      <span>STATUS</span>
+      <span class="dot" title="online"></span>
+    </div>
+    <dl class="card-rows">
+      <div><dt>handle</dt><dd>trpgfox</dd></div>
+      <div><dt>class</dt><dd>게임 기획 · Unity 개발</dd></div>
+      <div><dt>race</dt><dd>여우 (개발 친화종)</dd></div>
+      <div><dt>alignment</dt><dd>Chaotic Curious</dd></div>
+      <div><dt>level</dt><dd>모바일 RPG 라이브 · 누적 6y+</dd></div>
+      <div><dt>hp</dt><dd><span class="bar"><span style="--w:78%"></span></span> 마감 / 일정</dd></div>
+      <div><dt>mp</dt><dd><span class="bar"><span style="--w:62%"></span></span> 디버그 / 카페인</dd></div>
+    </dl>
+  </aside>
+</section>
+
+<!-- ============ CHARACTER SHEET ============ -->
+<section class="sheet" id="sheet">
+  <header class="section-head">
+    <h2>character&nbsp;sheet</h2>
+    <p>능력치 6종. 숫자보다는 어디에 시간과 마켓 출시를 쏟았느냐의 기록.</p>
+  </header>
+
+  <div class="stats">
+    <article class="stat" data-roll="STR">
+      <header><span class="abbr">STR</span><span class="name">Unity · C#</span></header>
+      <div class="score">16<span class="mod">+3</span></div>
+      <p>5년 4개월간 Unity 한 엔진만 팠다. 2인 팀의 메인 개발자로 8개의 모바일 게임을 실제 마켓에 출시.</p>
+    </article>
+    <article class="stat" data-roll="DEX">
+      <header><span class="abbr">DEX</span><span class="name">프로토타이핑</span></header>
+      <div class="score">15<span class="mod">+2</span></div>
+      <p>한 캠페인당 1~4개월. 짧게 굴리고 출시까지 끌고 간다. 비주얼노벨·퍼즐·방치형 RPG·슈터까지 장르 가리지 않음.</p>
+    </article>
+    <article class="stat" data-roll="CON">
+      <header><span class="abbr">CON</span><span class="name">라이브 서비스</span></header>
+      <div class="score">14<span class="mod">+2</span></div>
+      <p>출시 후가 진짜 시작. 인디 시절 대표작 6차례 업데이트로 D-7 리텐션 +15%p. 지금은 모바일 RPG 라이브 콘텐츠를 굴리는 중.</p>
+    </article>
+    <article class="stat" data-roll="INT">
+      <header><span class="abbr">INT</span><span class="name">시스템 기획</span></header>
+      <div class="score">16<span class="mod">+3</span></div>
+      <p>코어 룰 한 줄에 집착. 「맞을수록 강해진다」, 「경험치 물약」 같은 한 줄로 게임 전체를 묶는다.</p>
+    </article>
+    <article class="stat" data-roll="WIS">
+      <header><span class="abbr">WIS</span><span class="name">데이터 판독</span></header>
+      <div class="score">13<span class="mod">+1</span></div>
+      <p>출시 30일차 리텐션 2%에서 보상 구조를 뜯어고쳐 회복시킨 경험. 수치와 리뷰를 보고 다음 패치를 결정.</p>
+    </article>
+    <article class="stat" data-roll="CHA">
+      <header><span class="abbr">CHA</span><span class="name">팀 협업</span></header>
+      <div class="score">14<span class="mod">+2</span></div>
+      <p>발주사 협약 9인 팀 기획 리더로 일정을 2주 단축. 신조는 「숲을 보고 나무를 만드는 기획자」.</p>
+    </article>
+  </div>
+
+  <footer class="proficiencies">
+    <div>
+      <span class="prof-label">proficiencies</span>
+      <ul>
+        <li>Unity Engine · C# gameplay 스크립트</li>
+        <li>코어 매커니즘 / 시스템 기획</li>
+        <li>레벨 디자인 · 데이터 테이블 설계</li>
+        <li>라이브 서비스 · 유저 커뮤니티 운영</li>
+        <li>Jira · Notion · Git 협업</li>
+      </ul>
+    </div>
+    <div>
+      <span class="prof-label">background</span>
+      <ul>
+        <li>4년제 공대 · 소프트웨어 전공</li>
+        <li>2인 인디팀 · 5년 4개월</li>
+        <li>풀타임 게임 기획 과정 · 9개월</li>
+        <li>한국어 (native) · English (common)</li>
+        <li>주사위 (fluent)</li>
+      </ul>
+    </div>
+  </footer>
+</section>
+
+<!-- ============ QUESTS (PROJECTS) ============ -->
+<section class="quests" id="quests">
+  <header class="section-head">
+    <h2>quests&nbsp;completed</h2>
+    <p>출시작 7건 + 팀 프로젝트 2건의 마스킹 카드. 상세 타이틀과 스토어 링크는 사적 채널로만 공유.</p>
+  </header>
+
+  <ol class="quest-grid">
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">LEGENDARY</span>
+        <span class="qno">Q-01</span>
+      </header>
+      <h3>코드네임 P-알파 · 방치형 탱커 RPG</h3>
+      <p class="qmeta">모바일 · 방치형 RPG · 2인팀 · 출시</p>
+      <p>「맞을수록 강해진다」 코어 매커니즘으로 방치형 시장에서 차별화. 글로벌 7만 다운로드, 신규 무료 차트 상위권, 유저 리뷰 500건. 6차례 업데이트로 D-7 리텐션 +15%p.</p>
+      <ul class="qtags"><li>방치형 RPG</li><li>비동기 PvP</li><li>라이브 서비스</li></ul>
+    </li>
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">EPIC</span>
+        <span class="qno">Q-02</span>
+      </header>
+      <h3>기업협약 프로젝트 · 2D 길찾기 퍼즐</h3>
+      <p class="qmeta">Unity · 2D 퍼즐 · 9인팀 / 기획팀장</p>
+      <p>풀타임 과정 중 발주사 협약 프로젝트. 챕터 이동·소셜 시스템 100% 설계, 튜토리얼/Easy 스테이지 30개 직접 제작. 일정을 예정보다 2주 단축.</p>
+      <ul class="qtags"><li>기획팀장</li><li>시스템 기획</li><li>레벨 디자인</li></ul>
+    </li>
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">RARE</span>
+        <span class="qno">Q-03</span>
+      </header>
+      <h3>코드네임 P-베타 · 방치형 RPG</h3>
+      <p class="qmeta">모바일 · 방치형 RPG · 1인 개발</p>
+      <p>「경험치 물약」을 코어로 한 방치형 RPG. 오프라인 보상 장치, 요일 던전, 장비 옵션 합성으로 회차 플레이를 묶었다. 출시·운영까지 100% 단독.</p>
+      <ul class="qtags"><li>방치형 RPG</li><li>오프라인 보상</li><li>요일 던전</li></ul>
+    </li>
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">RARE</span>
+        <span class="qno">Q-04</span>
+      </header>
+      <h3>합반 프로젝트 · 3D 탑다운 슈터</h3>
+      <p class="qmeta">Unity · 3D 슈터 · 8인팀</p>
+      <p>풀타임 과정 합반 프로젝트. 원거리 무기 타입 기획 100%, 투사체 특수효과·즉시/설치형 소모성 아이템 설계, 무기·투사체·아이템 데이터 테이블 작성.</p>
+      <ul class="qtags"><li>탑다운 슈터</li><li>무기 시스템</li><li>데이터 테이블</li></ul>
+    </li>
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">UNCOMMON</span>
+        <span class="qno">Q-05</span>
+      </header>
+      <h3>코드네임 P-감마 · 비주얼노벨</h3>
+      <p class="qmeta">모바일 · 비주얼노벨 · 1인 개발</p>
+      <p>이전 선택이 다음 선택지에 영향을 주는 분기형 비주얼노벨. 엔딩 수집 콘텐츠와 모바일 기기 특징을 활용한 체감형 콘텐츠로 묶었다.</p>
+      <ul class="qtags"><li>비주얼노벨</li><li>분기 선택</li><li>모바일</li></ul>
+    </li>
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">COMMON</span>
+        <span class="qno">Q-06</span>
+      </header>
+      <h3>코드네임 P-델타 · AR 수집 도감</h3>
+      <p class="qmeta">모바일 · 카메라 인식 · 1인 개발</p>
+      <p>실세계와 연동되는 수집 시스템. 카메라 인식으로 실물을 도감에 등록하고, 수집률에 따라 업적이 해제된다. SNS 공유까지.</p>
+      <ul class="qtags"><li>카메라 인식</li><li>수집</li><li>SNS 공유</li></ul>
+    </li>
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">UNCOMMON</span>
+        <span class="qno">Q-07</span>
+      </header>
+      <h3>코드네임 P-입실론 · 슬라이스 매치 퍼즐</h3>
+      <p class="qmeta">모바일 · 퍼즐 · 1인 개발</p>
+      <p>단순 터치를 넘어 슬라이스 조작으로 풀어가는 컬러 매치 시스템. 손가락의 동선 자체가 풀이의 일부가 되는 퍼즐.</p>
+      <ul class="qtags"><li>퍼즐</li><li>슬라이스 조작</li><li>컬러 매치</li></ul>
+    </li>
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">COMMON</span>
+        <span class="qno">Q-08</span>
+      </header>
+      <h3>코드네임 P-제타 · 원버튼 액션</h3>
+      <p class="qmeta">모바일 · 원버튼 경쟁 · 1인 개발</p>
+      <p>고장난 우주선 컨셉. 양쪽으로 끌리는 중력을 한 버튼으로 다잡으며 기록을 갱신하는 캐주얼 액션.</p>
+      <ul class="qtags"><li>원버튼</li><li>중력 조작</li><li>기록 경쟁</li></ul>
+    </li>
+
+    <li class="quest-card">
+      <header>
+        <span class="tier">COMMON</span>
+        <span class="qno">Q-09</span>
+      </header>
+      <h3>코드네임 P-에타 · 차량 부딪치기</h3>
+      <p class="qmeta">모바일 · 원버튼 경쟁 · 1인 개발 (개발 전담)</p>
+      <p>한 버튼으로 부딪치며 기록을 갱신하는 캐주얼 액션. 본인 역할은 개발 100% 전담, 기획 기여는 없음. 출시 사이클 자체를 한 번 더 굴려본 경험.</p>
+      <ul class="qtags"><li>원버튼</li><li>캐주얼</li><li>개발 전담</li></ul>
+    </li>
+
+  </ol>
+</section>
+
+<!-- ============ SAGA (TIMELINE) ============ -->
+<section class="saga" id="saga">
+  <header class="section-head">
+    <h2>saga &mdash; 경력 기록</h2>
+    <p>2인 인디 5년 + 아카데미 9개월. 작은 파티에서 단련된 솔로 출신, 이제 더 큰 길드를 찾는 중.</p>
+  </header>
+
+  <ol class="timeline">
+    <li>
+      <span class="t-year">현재 · 7개월차</span>
+      <div>
+        <h4>모바일 RPG · 라이브 서비스 (시스템 기획 / 개발)</h4>
+        <p>출시 전엔 코어/콘텐츠 시스템을 설계·구현, 출시 후엔 라이브 콘텐츠 기획·개발·운영을 함께 굴린다. 기획-구현-운영 한 사이클을 그대로 들고 다니는 자리.</p>
+      </div>
+    </li>
+    <li>
+      <span class="t-year">직전 · 9개월</span>
+      <div>
+        <h4>풀타임 게임 기획 과정 수료</h4>
+        <p>합반 프로젝트 「3D 탑다운 슈터」(8인)와 발주사 협약 프로젝트 「2D 길찾기 퍼즐」(9인 / 기획팀장) 2건 완수. 팀 협업과 문서 기반 기획을 본격적으로 익힌 구간.</p>
+      </div>
+    </li>
+    <li>
+      <span class="t-year">그 이전 · 5년 4개월</span>
+      <div>
+        <h4>2인 인디 개발팀</h4>
+        <p>Unity 메인 개발 + 서브 기획. 5년 동안 8개의 모바일 게임을 직접 출시·운영. 대표작 글로벌 7만 다운로드, 리뷰 500건. 코어 매커니즘 설계부터 라이브 서비스, 유저 커뮤니티 운영까지 한 사이클을 반복.</p>
+      </div>
+    </li>
+    <li>
+      <span class="t-year">더 이전</span>
+      <div>
+        <h4>4년제 공대 · 소프트웨어 전공</h4>
+        <p>시스템 설계를 일찍 좋아함. 학회/대회 프로젝트로 IoT·드론 시스템 한두 건 굴려본 시기.</p>
+      </div>
+    </li>
+    <li>
+      <span class="t-year">로그 0</span>
+      <div>
+        <h4>주사위와 코드</h4>
+        <p>처음 GM을 본 날과 처음 컴파일러를 본 날 사이의 거리는 생각보다 짧았다.</p>
+      </div>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <header class="section-head">
+    <h2>roll&nbsp;for&nbsp;encounter</h2>
+    <p>협업 / 커피챗 / 명함에서 오신 분들 환영. 현재 모바일 RPG 라이브 서비스 팀 재직 중.</p>
+  </header>
+
+  <div class="contact-grid">
+    <a class="ch" href="mailto:trpgfox@gmail.com">
+      <span class="ch-key">mail</span>
+      <span class="ch-val">trpgfox@gmail.com</span>
+      <span class="ch-arrow">→</span>
+    </a>
+    <a class="ch" href="https://github.com/trpgfox" target="_blank" rel="noopener">
+      <span class="ch-key">github</span>
+      <span class="ch-val">github.com/trpgfox</span>
+      <span class="ch-arrow">→</span>
+    </a>
+  </div>
+
+  <p class="contact-note">
+    답장 세이브: <span class="dc">d20 + INT(+3)</span>. 평균 12 이상이면 그 주 안에 회신. 상세 이력·포트폴리오·스토어 링크는 메일로 요청.
+  </p>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-line">
+    <span>© trpgfox · 2인 인디 출신 · 현재 모바일 RPG 라이브 중</span>
+    <span class="foot-cmd">힌트: 콘솔을 열어보세요. 또는 <code>?roll</code> 을 URL 뒤에.</span>
+  </div>
+</footer>
+
+<!-- ============ DICE OVERLAY ============ -->
+<div class="dice-stage" id="diceStage" aria-hidden="true">
+  <div class="dice" id="dice">
+    <span class="d-face">20</span>
+  </div>
+  <div class="dice-result" id="diceResult"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
